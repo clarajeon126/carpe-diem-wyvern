@@ -94,14 +94,14 @@ function startSeeingIfCharTouches(star){
         console.log("running")
         let didTouch = is_colliding(star)
         if (didTouch){
+            addPoint()
             console.log("touched")
             clearInterval(starCharTouch)
             star.remove()
-            addPoint()
+            
         }
         else if(star.offsetTop > window.innerHeight){
             clearInterval(starCharTouch)
-            
         }
     }, 100);
     starTouchArr.push(starCharTouch)
