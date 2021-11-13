@@ -19,7 +19,7 @@ body {
 }
 
 #point-text {
-    font-size: 5vw;
+    font-size: 3vw;
     color: rgb(242, 101, 255);
 }
 #name {
@@ -28,6 +28,7 @@ body {
     left: 40vw;
     width: 20vw;
     height: 2vh;
+    font-size: 1vw;
     color: white;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
@@ -41,7 +42,7 @@ body {
     height:30vh;
     border-radius: 2vh;
     color: white;
-    font-size: 5vw;
+    font-size: 3vw;
     text-align: center;
     background-color: rgba(137, 43, 226, 0.589);
 }
