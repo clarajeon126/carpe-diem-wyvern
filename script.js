@@ -51,7 +51,7 @@ function addStar(){
     star.setAttribute("class", "star-item");
 
     //randomly place star
-    let leftNum = getRandomIntInclusive(1,100)
+    let leftNum = getRandomIntInclusive(1,94)
     star.style.top = "0vh"
     star.style.left = leftNum + "vw"
 
