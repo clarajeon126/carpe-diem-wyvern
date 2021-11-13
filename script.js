@@ -115,41 +115,27 @@ var is_colliding = function(star) {
     let charLeft = char.offsetLeft
     let charWidth = char.offsetWidth
     
+    
     if(charLeft < starLeft){
+        console.log("hi")
         let charRight = charLeft + charWidth
 
         let touched = starLeft >= charLeft && starLeft <= charRight
+        if(charLeft < 0){
+            return false
+        }
         return touched;
     }
     else{
+        console.log("bye")
         let starRight = starLeft + starWidth
 
         let touched = charLeft >= starLeft && charLeft <= starRight
 
+        
         return touched;
     }
   };
-
-//check if star and char touched
-function starTouchedChar(star){
-    var star_height = star.offsetHeight;
-    var star_width = star.offsetWidth;
-    var star_top = star.offsetTop + star_height;
-    var star_left = star.offsetLeft + star_width;
-  
-    var char_height = char.offsetHeight;
-    var char_width = char.offsetWidth;
-    var char_top = char.offsetTop + char_height;
-    var char_left = char.offsetLeft + char_width;
-  
-    var not_colliding =
-      star_top < char.offsetTop ||
-      star.offsetTop > char_top ||
-      star_left < char.offsetTop ||
-      star.offsetLeft > char_left;
-  
-    return !not_colliding;
-}
 
 let deathMsg = document.getElementById("death-msg")
 function death(){
